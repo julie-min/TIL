@@ -17,7 +17,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 
 ****
 # mySQL
-- [JOIN 내부, 외부, 교차](#1-%EA%B8%B0%EB%B3%B8)
+- [JOIN 내부, 외부, 교차](#[3._JOIN.md](https://github.com/julie-min/TIL/blob/main/mySQL/3.%20JOIN.md))
 - [Frequently Used Grammar](#MySQL_grammar)
 
 # Java
