@@ -8,8 +8,8 @@
 더욱 다양한 정보와 공부내용을 보실 수 있어요. 📖
 
 >I record my daily study progress. 🌱 <br>
-I mainly focus on organizing topics that confuse me or concepts I want to clarify further. <br> <br>
-You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](https://julie-mingu.tistory.com/)  to explore a variety of development information and study materials. 📖
+I mainly focus on organizing topics that confuse me or concepts I want to clarify further. <br> 
+You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](https://julie-mingu.tistory.com/)  to explore a variety of CS information and study materials. 📖
 
 > I have written most of the content in a mix of English and Korean languages. 🌏 
 
