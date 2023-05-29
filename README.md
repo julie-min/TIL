@@ -21,22 +21,22 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Frequently Used Grammar](mySQL/2.MySQL_grammar.md)
 
 # Java
-- [Constructor](#Constructor)
-- [Encapsulation](#Encapsulation)
-- [Enum](#Enum)
-- [Interfaces](#Interface)
-- [JDBC](#JDBC)
-- [Collection 정리](#List_Array_Set)
-- [Recursion](#Recursion)
-- [Thread](#Thread)
+- [Constructor](Java/Constructor.md)
+- [Encapsulation](Java/Encapsulation.md)
+- [Enum](Java/Enum.md)
+- [Interfaces](Java/Interface.md)
+- [JDBC](Java/JDBC.md)
+- [Collection 정리](Java/List_Array_Set.md)
+- [Recursion](Java/Recursion.md)
+- [Thread](Java/Thread.md)
 
 # HTTP
-- [HTTP 개론](#1.HTTP)
-- [Servlet](#2.Servlet)
-  
+- [HTTP 개론](https://github.com/julie-min/TIL/blob/main/HTTP/1.%20HTTP.md)
+- [Servlet](https://github.com/julie-min/TIL/blob/main/HTTP/2.%20Servlet.md)
+
 # Spring
-- [Spring Framework](#1.Spring-Framework)
-- [Spring Boot Setting](#2.Spring-Boot-Setting)
+- [Spring Framework](https://github.com/julie-min/TIL/blob/main/Spring/1.Spring%20Framework.md)
+- [Spring Boot Setting](https://github.com/julie-min/TIL/blob/main/Spring/2.Spring%20Boot%20Setting.md)
 
 <br>
 
