@@ -19,6 +19,9 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 # mySQL
 - [JOIN 내부, 외부, 교차](https://github.com/julie-min/TIL/blob/main/mySQL/3.%20JOIN.md)
 - [Frequently Used Grammar](mySQL/2.MySQL_grammar.md)
+- [Database Modeling](mySQL/4.%20Database%20Modeling.md)
+- [Data Normalization](mySQL/5.%20Data%20Normalization.md)
+- [Relational Database](mySQL/6.%20Relational%20Database.md)
 
 # Java
 - [Constructor](Java/Constructor.md)
@@ -37,6 +40,8 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 # Spring
 - [Spring Framework](https://github.com/julie-min/TIL/blob/main/Spring/1.Spring%20Framework.md)
 - [Spring Boot Setting](https://github.com/julie-min/TIL/blob/main/Spring/2.Spring%20Boot%20Setting.md)
+- [Controller Method](Spring/3.%20Controller%20Method.md)
+- [Dependency Injection](Spring/4.%20Dependency%20Injection.md)
 
 <br>
 
