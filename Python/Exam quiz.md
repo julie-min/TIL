@@ -108,3 +108,33 @@ format(3.141592, ">20.3f")
 6. 소프트 웨어 개발 라이프사이클에서, 요구반영, 예상결과 유사검증 및 오류파악이 진행되는단계는? <br>
    : **테스트**
 
+---
+
+- random() : 0~1사이의 숫자 중 난수 발생
+- randint(a,b) : a부터 b사이의 숫자 중 난수 발생
+- randrange(a,b,c) : a부터 b사이의 c의 간격으로 나열된 숫자 중 난수발생
+- choice(sequence) : 주어진 항목을 핸덤하게 반환
+- sample(sequence) : 랜덤하게 여러개의 원소를 선택
+- shuffle(sequence) : 시퀀스의 순서를 랜덤하게 섞음
+---
+
+```python
+h_fp = open("hamlet_by_Shakespeare.txt", "r")
+wdict = dict()
+for line in h_fp.readlines():
+    for word in line.strip().split():
+        word = word.strip(" ,?[.\";").lower()
+        if wdict.get(word) is not None:
+            count = wdict[word]
+        else :
+            count = 0
+            wdict[word] = count + 1
+h_fp.close()
+```
+1. "hamlet_by_Shakespeare.txt" 파일을 읽기 모드("r")로 열어 파일 객체를 생성하고, h_fp 변수에 할당합니다.
+2. 빈 사전(dict)을 생성하여 wdict 변수에 할당합니다. 이 사전은 단어와 해당 단어의 빈도수를 저장하는데 사용됩니다.
+3.  파일을 줄 단위로 읽으면서 반복합니다.
+4. 각 줄을 공백 기준으로 단어로 분리하여 반복합니다. for word in line.strip().split()
+5. word.strip(" ,?[.\";"): 단어의 앞뒤로 나타나는 특수문자와 공백을 제거합니다.
+6. 사전에서 해당 단어 word를 키로 사용하여 값을 조회합니다. 만약 해당 단어의 빈도수가 존재한다면, count 변수에 해당 빈도수를 할당합니다.
+7. 해당 단어의 빈도수가 존재하지 않는다면, 새로운 단어의 빈도수를 초기화하고 wdict 사전에 해당 단어를 키로 사용하여 빈도수를 1로 할당합니다.
