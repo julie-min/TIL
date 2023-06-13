@@ -89,6 +89,7 @@ public class Main {
 ```
 
 ---
+<img width="529" alt="image" src="https://github.com/julie-min/TIL/assets/130271406/abc49fe2-c4e3-4130-99be-9ff8599b7412">
 
 ## LinkedList
 1. 이중 연결 리스트를 사용
