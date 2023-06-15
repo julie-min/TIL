@@ -61,13 +61,39 @@ void 는 return 과 함께 못옴
 
 
 ### 예시1번
-1. 계산기 클래스 (클래스명: 계산기)
-2. 카페 클래스 (메인) (클래스명: 카페)
+1. 계산기 클래스
+   - 클래스명: 계산기
+   - 메서드: 더하기, 곱하기, 빼기...
+2. 카페 클래스 (메인)
+   - 클래스명: 카페
 
 
 - 메인 클래스에서 계산기 메서드 불러오기 <br>
   ```java
-  Cal cal = new Cal();
+  계산기 cal = new 계산기();
+  ```
+해당 불러올 메서드가 있는 클래스명을 써주는 것
+<br>
+- cal 이라는 카페에서 사용할 메서드 생성한 것
+- 카페에서 반환값 생성
+  ``` java
+  cal.더하기(2,3);
+  cal.곱하기(2,3);
+  int result = cal.빼기(3,2);
+  System.out.println(result);
   ```
 
-- 
+
+### 예시 2번
+- 반환값이 배열일 때
+```java
+public ArrayList<Integer> getEven(int[] num) {
+    System.out.println(Arrays.toString(num));
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    for (int x : num) {
+        if(x %2 == 0) {
+            list.add(x);
+        }
+    }
+}
+```
