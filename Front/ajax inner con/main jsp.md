@@ -14,34 +14,34 @@
 
 
 <script>
-$(function() {
+$(function() {  //body 먼저 읽어서 램에 저장을 해주세요. 익명함수입니다.
 	
-	$('#b1').click(function() {
-		alert("b1")
-		$.ajax({
-			url: "test.jsp",
-			data: {
+	$('#b1').click(function() { // b1 버튼을 누르면, 아래 함수를 실행하세요.
+		alert("b1") // 연결되었는지 확인
+		$.ajax({ // ajax 함수를 실행
+			url: "test.jsp", // jsp 파일로 요청을 보내겠습니다.
+			data: { // id가 test인 value를 보내겠습니다.
 				test: $('#test').val()
 			},
-			success: function(x) {
-				$('#d1').html("받은 데이터는" + x)
+			success: function(x) { // 성공했다면, 그 응답을 x라고 하겠다.
+				$('#d1').html("받은 데이터는" + x) // id가 d1인 것을 변경하겠다.
 			} ,
-			error: function(e) {
-				alert(e)
+			error: function(e) { // 에러가 난다면, 그 응답을 e라고 하겠다.
+				alert(e)  // alert로 띄워보겠다.
 			}
 		}) // ajax
 	}) //b1
 	
-	$('#b2').click(function() {
-		alert("b2")
-		$.ajax({
-			url: "money.jsp",
-			data: {
+	$('#b2').click(function() { //버튼 b2를 누르면, 아래를 실행하세요.
+		alert("b2") // 일단 알림창 한번 보겠습니다.
+		$.ajax({ // 버튼누르면 새로고침은 안하게 할게요.
+			url: "money.jsp", // money 파일로 데이터를 던질게요 받아보세요~
+			data: { // 데이터가 2개 갈겁니다. id가 money, what인 value를 보내겠습니다. (두개는 input임.)
 				money: $('#money').val(),
 				what: $('#what').val()
 			},
-			success: function(x) {
-				$('#d1').html("결제할 금액은" + x)
+			success: function(x) { // 성공한다면, 그 응답을 x로 하겠습니다.
+				$('#d1').html("결제할 금액은" + x) // d1을 x로 치환하겠습니다.
 			} ,
 			error: function(e) {
 				alert(e)
@@ -166,6 +166,8 @@ input{
 	<input id="dol">
 	<button id="b6" class="mt-2 p-2 bg-primary text-white rounded">달러를 원화로(b6)</button>
 	<hr>
+
+
 	<div id="d1" style="width: 400px; height: 100px; background: lightgray;">결과창</div>
 
 

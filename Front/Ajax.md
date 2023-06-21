@@ -24,3 +24,5 @@
 - 키: 메타데이터
 - 값: 핵심데이터
 
+# 대리인 서버 = proxy server
+직접적으로 rss 를 받기 어려울 때는 agency server

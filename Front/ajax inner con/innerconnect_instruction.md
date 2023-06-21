@@ -6,6 +6,12 @@
 <br>
 <br>
 
+# body에 id 생성
+- input id = test
+- button id = b1
+
+# head에 script 부분 제이쿼리
+
 # 제이쿼리 작성
 1. $() : body를 먼저 읽어서 램에 저장 시작해줘. document의 뜻
 2. $(function) + Ctrl+ Space => 익명함수 (anonymous function)
@@ -35,6 +41,10 @@ $(function() {
 			error: 
 		})
 ```
+- ajax = 불러올게.
+- ajax 함수는 url 불러오고
+- data를 보내는데 (JSON처럼)
+- 
 - url과 success 는 반드시 들어가야하는 것
 - success: html 200번 성공이 되었을 때 보여주는 것
 - 함수를 값으로 써주는 것이다.
