@@ -36,7 +36,29 @@ String originalId / originalPw
 if(id. equals(originalId) && pw.equals(origianlPw)) {
 session.setAttribute
 
-body: <a href= 쇼핑.jsp>
-[쇼핑 jsp]
-if(session.getAttribute("id") == null) {
-out.print
+
+### 쿠키: 클라이언트(브라우저)에 저장
+### 세션: 서버(변수)에 저장
+
+---
+
+## 쿠키 생성 메서드
+1. cookie 생성 : new Cookie(name, value)
+2. 유효시간 지정: setMaxAge(int expiry)
+3. 쿠키 경로 설정: setPath(String uri)
+4. 쿠키 도메인 설정: setDomain(String domain)
+5. 쿠키 전송: addCookie(Cookie cookie)
+6. 쿠키 추출: Cookie[] getCookies()
+7. 쿠키 검색: String getName()
+8. 쿠키값 추출: String getValue()
+
+
+
+- 쿠키를 심는다
+- Cookie c1 = new Cookie("name","value");
+- **response**.addCookie(c1)
+- 브라우저에게 쿠키를 심으라고 명령함
+
+- 쿠키를 가져온다
+- Cookie[] cookies = **request**.getCookies();
+- 
