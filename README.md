@@ -34,6 +34,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Recursion](Java/Recursion.md)
 - [Thread](Java/Thread.md)
 - [Method](Java/Method.md)
+- [Singleton] (Java/Singleton.md)
 
 # HTTP
 - [HTTP 개론](https://github.com/julie-min/TIL/blob/main/HTTP/1.%20HTTP.md)
@@ -57,7 +58,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [C Programming](C_Programming/Exam_study.md)
 - [Python1](Python/Exam_quiz.md)
 - [Python2](Python/Exam_study.md)
-- [Engineer Information Processing](summary.md)
+- [Engineer Information Processing](1.소프트웨어설계.md)
 
 
 <br>
