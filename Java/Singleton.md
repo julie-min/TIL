@@ -61,4 +61,42 @@ public class Car {
 - 컨테이너가 분리되어있기 때문에 쿼리를 보낼때마다 비용이 소요되는 것이다.
 - 
 
+```java
+public class Score {
+    private static Score instance;
+
+    private int score;
+
+    private Score() {
+        // 생성자를 private으로 선언하여 외부에서 인스턴스를 생성하는 것을 막습니다.
+        score = 0;
+    }
+
+    public static Score getInstance() {
+        if (instance == null) {
+            // 인스턴스가 없을 경우에만 생성합니다.
+            instance = new Score();
+        }
+        return instance;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+}
+
+```
+
+## 나의 질문과 답변
+맞습니다. 클래스의 생성자를 private으로 설정하면 외부에서 직접적으로 해당 클래스의 인스턴스를 생성할 수 없게 됩니다. 따라서 외부에서 해당 클래스에 접근하거나 조회하는 것이 제한됩니다.
+
+맞습니다. Score 클래스를 private으로 만들어 접근을 원천 차단하고, getInstance() 메서드를 통해 해당 클래스의 인스턴스를 얻을 수 있게 합니다. getInstance() 메서드는 보통 public으로 선언되어 외부에서 호출 가능하며, 이를 통해 싱글톤 인스턴스를 얻을 수 있습니다. 이렇게 별도의 메서드를 통해 접근을 허용하면서도, 생성자의 접근을 제한하여 싱글톤 인스턴스의 유일성을 유지할 수 있습니다.
+
+맞습니다. 싱글톤 패턴은 접근 제한과 공유를 조합하여 외부에서 클래스의 인스턴스에 접근하는 것을 효과적으로 제어하는 방식입니다. 클래스 내부의 상태를 유지하면서도, 외부에서 필요한 곳에서 인스턴스를 공유하고 사용할 수 있게 됩니다.
+
+요약하자면, 싱글톤 패턴은 인스턴스 생성을 제한하고, 접근 가능한 메서드를 제공하여 동일한 인스턴스를 여러 곳에서 공유하고 사용하는 것을 가능하게 합니다. 이를 통해 객체의 생성과 관리를 효율적으로 조절할 수 있습니다.
 
