@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+
+    $('#b1').click(function() {
+        $.ajax({
+
+
+            url: "https://api.openweathermap.org/data/3.0/onecall?lat=37.521&lon=126.924&exclude={part}&appid=e7ff597f03406702f7a04b4499957b6d",
+            //어디로 접근을 할것인가
+            dataType: "json",
+            success: function(json) {
+
+                alert("요청결과"+json)
+
+
+            } //success
+            
+            //성공했을때 어디로 보낼것인가
+
+
+
+
+        }) //ajax
+
+
+    }) //b1
+
+}) //fun
+</script>
+
+</head>
+<body>
+<button id="b1">여의도역(37.521,126.924)</button>
+</body>
+
+
+</html>
