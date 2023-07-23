@@ -42,16 +42,24 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [CGI](https://github.com/julie-min/TIL/blob/main/HTTP/3.%20CGI.md)
 - [Thymeleaf](https://github.com/julie-min/TIL/blob/main/HTTP/4.%20Thymeleaf.md)
 - [Bootstrap](https://github.com/julie-min/TIL/blob/main/HTTP/5.%20Bootstrap.md)
+- [Variable](variable.md)
 
 # Spring
 - [Spring Framework](https://github.com/julie-min/TIL/blob/main/Spring/1.Spring%20Framework.md)
 - [Spring Boot Setting](https://github.com/julie-min/TIL/blob/main/Spring/2.Spring%20Boot%20Setting.md)
 - [Controller Method](Spring/3.%20Controller%20Method.md)
 - [Dependency Injection](Spring/4.%20Dependency%20Injection.md)
+- [Singleton](Singleton.md)
+- [Lombok](Lombok.md)
+- [Model](Model.md)
+- [ResponseEntity](ResponseEntity.md)
 
 # JSP
 - [HTTP Protocol](JSP/HTTP_protocol.md)
 - [Web](JSP/Web.md)
+- [JSTL](JSTL.md)
+- [Session](Session.md)
+- [EL](EL.md)
 
 
 # Study for Exam
@@ -62,7 +70,13 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Diagram](Engineer_Information_Processing/Diagram.md)
 - [GoF](Engineer_Information_Processing/GoF.md)
 
-
+# Algorithm
+- [Array](Array.md)
+- [List](List.md)
+- [Set](Set.md)
+- [Stack&Queue](Stack&Queue.md)
+- [String](String.md)
+   
 <br>
 
 ## 유용한 사이트 / 출처
@@ -72,3 +86,6 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - https://www.toptal.com/developers/gitignore
 - https://www.w3schools.com/java/default.asp 
 - https://techblog.woowahan.com/2553/
+- https://cscircles.cemc.uwaterloo.ca/java_visualize/
+- https://mvnrepository.com/
+- https://jqueryui.com/
