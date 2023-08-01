@@ -58,3 +58,17 @@ if(id.equals(originalID) && pw.equals(originalPW)) {
 - `getSession(true)` 세션이 없는 경우 새로 생성하여 리턴
 - `getSession(false)` 세션이 없는 경우 null을 리턴
 
+### HttpSession 메서드
+`getAttribute(String name)` 값 반환 <br>
+`getID()` 세션ID반환<br>
+`getCreationTime()` 생성된 시간 반환<br>
+`getLastAccessedTime` 마지막 클라이언트 시도 시간반환<br><br>
+`getMaxInactiveInterval` 클라이언트 요청이 없을 때 서버가 현재의 세션을 언제까지 유지할지를 초단위로 반환한다. <br>기본 유효시간은 30분으로 지정되어있음.<br><br>
+`isNew()` 서버측에서 새로운 HttpSession 객체를 생성한 경우에는 true 를 반환하고, 기존 세션이 유지되고 있는 경우라면 false를 반환한다. <br><br>
+`removeAttribute(String name)` HttpSession 객체에서 name으로 지정된 객체를 삭제한다.<br><br>
+`setMaxInactiveInterval(int second)` HttpSession객체의 유지시간을 설정한다. 지정된 시간이 지나면 HttpSession객체는 자동삭제된다.<br><br>
+
+---
+### 로그인 여부를 판단하는 것은 세션을 가지고 한다.
+### 즉, 로그인에 실패하면 세션을 설정하지 않음.
+
