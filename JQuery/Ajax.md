@@ -36,9 +36,10 @@
 
 
 ajax: 순서상관없이 아무때나 어느 위치에서든지 서버와 통신한다.
+
 JQUERY : 제이쿼리 자체는 같은 html 내에서 값을 가져오는 일이다.
 
-```
+```html
 <script type="text/javascript" src="jquery 라이러리 파일 경로"></script>
 $(function() {
 $('#b1').click(function() {
@@ -63,7 +64,6 @@ body에는 버튼의 id값과 입력창의 id값 총 2개가 있어야한다.
 
 JQuery에서 가져오는방법 = 거기에 있는게 뭔지모르니까 () 표시
 $("#test").text())
-<p id="test"> GET <b> ME <b> </p>
 
 1. text() 특정 아이디값의 텍스트만 가져온다   `GET ME`
 2. html() 특정 아이디값의 html 을 다 가져온다  `GET <b>ME</b> `
@@ -71,25 +71,30 @@ $("#test").text())
 4. attr() 
 
 JQuery에서 변경하는방법 = (넣는다. 변경된다. 그전에 뭐가 써있든 그냥 바뀜.)
+
+```html
   $("#btn1").click(function(){
     $("#test1").text("Changed");
 <p id="test">Chnage this</p>
 <button id="btn1">Button</button>
+```
 
 1. text("Hello World") 기존 아이디에 해당하는 텍스트가 있다면 변경한다  `Changed`
 2. html("<b>Hello World<b>") HTML요소까지 같이 적용해서 바꾼다
 3. val("Hello World") 폼에 적어놓은 문구를 바꾼다
 
-콜백함수 (순서대로 실행)
-① hide ② alert
+## 콜백함수 (순서대로 실행) 
+① hide <br> ② alert
+```html
 $("button").click(function(){
   $("p").hide("slow", function(){
 	alert("The paragraph is now hidden");
   });
 });
+```
 
-
-JQuery+AJAX
+## JQuery+AJAX
+```html
 $.get(URL,callback);
 $(document).ready(function(){
   $("button").click(function(){
@@ -98,9 +103,9 @@ $(document).ready(function(){
     });
   });
 });
+```
 
-
-
+```html
 $.post(URL,data,callback);
 $("button").click(function(){
   $.post("demo_test_post.asp",
@@ -112,6 +117,7 @@ $("button").click(function(){
     alert("Data: " + data + "\nStatus: " + status);
   });
 });
+```
 
 
 
