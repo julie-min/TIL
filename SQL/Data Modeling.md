@@ -53,3 +53,4 @@
     2) 어떤 것이 가지는 성격: Attributes
     3) 업무가 관여하는 어떤 것 간의 관계 : Relationships
 
+11. 
