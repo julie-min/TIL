@@ -61,4 +61,8 @@
 - 표현식 목록에서 null이 아닌 첫번째 값을 반환하는 표준함수
 - 영어로 합치다, 통합하다라는 뜻
 
+# SELECT
+- SELECT 문장의 실행순서
+- FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
+
 
