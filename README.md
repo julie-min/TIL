@@ -16,13 +16,14 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 ![sandy-spongebob-movie-coming-to-netflix-in-2023](https://github.com/julie-min/TIL/assets/130271406/ab4d59fc-a3e1-47d9-8a11-d7b6789e6ad6)
 
 ****
-# mySQL
+# SQL
 - [JOIN 내부, 외부, 교차](https://github.com/julie-min/TIL/blob/main/mySQL/3.%20JOIN.md)
-- [Frequently Used Grammar](mySQL/2.MySQL_grammar.md)
-- [Database Modeling](mySQL/4.%20Database%20Modeling.md)
-- [Data Normalization](mySQL/5.%20Data%20Normalization.md)
-- [Relational Database](mySQL/6.%20Relational%20Database.md)
-- [Entity](mySQL/Entity.md)
+- [Frequently Used Grammar](SQL/2.MySQL_grammar.md)
+- [Database Modeling](SQL/4.%20Database%20Modeling.md)
+- [Data Normalization](SQL/5.%20Data%20Normalization.md)
+- [Relational Database](SQL/6.%20Relational%20Database.md)
+- [Entity](SQL/Entity.md)
+- [Function](SQL/Function.md)
 
 # Java
 - [Constructor](Java/Constructor.md)
