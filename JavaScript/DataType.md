@@ -103,3 +103,86 @@ console.log(myArray);
 
 ```
 ## Object → JSON으로 만드는 방법
+모든 키와 밸류에 큰따옴표를 넣어 String화 해주는 것이다.
+```javascript
+const myObject = {
+  name: 'John',
+  age: 30,
+  location: 'New York'
+};
+
+const jsonString = JSON.stringify(myObject);
+
+console.log(jsonString);
+```
+결과
+```json
+{
+  "name": "John",
+  "age": 30,
+  "location": "New York"
+}
+```
+## JSON → Object으로 만드는 방법
+JSON.parse라는 강력한 기능으로 쉽게 말해 Object의 형식으로 바꿔준다.
+```javascript
+const jsonString = '{"name": "John", "age": 30, "location": "New York"}';
+const myObject = JSON.parse(jsonString);
+
+console.log(myObject);
+```
+결과
+```javascript
+{
+  name: 'John',
+  age: 30,
+  location: 'New York'
+}
+```
+
+## Array → JSON으로 만드는 방법
+큰따옴표를 붙여주는 형식은 뭐다? `Stringify`
+```javascript
+const myArray = ['name', 'age', 'location'];
+const jsonString = JSON.stringify(myArray);
+
+console.log(jsonString);
+```
+결과
+```json
+["name","age","location"]
+```
+
+## Value값이 배열인 경우
+JSON도 배열을 가질 수 있다.
+```javascript
+const myObject = {
+  name: 'John',
+  hobbies: ['reading', 'traveling', 'coding']
+};
+
+// Object를 JSON으로 변환
+const jsonString = JSON.stringify(myObject);
+
+// 해당 배열 추출
+const hobbiesArray = myObject.hobbies;
+
+console.log(jsonString);
+console.log(hobbiesArray);
+
+```
+결과
+```json
+{
+  "name": "John",
+  "hobbies": [
+    "reading",
+    "traveling",
+    "coding"
+  ]
+}
+```
+배열만 추출함
+```javascript
+['reading', 'traveling', 'coding']
+```
