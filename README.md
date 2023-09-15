@@ -45,6 +45,10 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Bootstrap](https://github.com/julie-min/TIL/blob/main/HTTP/5.%20Bootstrap.md)
 - [Variable](variable.md)
 
+# JavaScript
+- [Data Type](DataType.md)
+- [Parsing](JSONparsing.md)
+
 # Spring
 - [Spring Framework](https://github.com/julie-min/TIL/blob/main/Spring/1.Spring%20Framework.md)
 - [Spring Boot Setting](https://github.com/julie-min/TIL/blob/main/Spring/2.Spring%20Boot%20Setting.md)
