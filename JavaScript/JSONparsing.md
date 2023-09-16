@@ -66,3 +66,39 @@ User user = objectMapper.readValue(new URL("file:user.json"), User.class);
 String jsonArr = "[{\"name\":\"Ryan\",\"age\":30},{\"name\":\"Jake\",\"age\":20}]";
 List<User> users = objectMapper.readValue(jsonArr, new TypeReference<>() {});
 ```
+
+---
+
+정리하자면...
+# JavaScript의 내장함수
+1. `JSON.parse`
+   : JSON -> JavaScript
+2. `JSON.stringify`
+   : JavaScript -> JSON
+
+``` javascript
+const jsonString = '{"name": "John", "age": 30}';
+const myObject = JSON.parse(jsonString);
+console.log(myObject.name); // 출력: John
+
+const myObject = { name: "John", age: 30 };
+const jsonString = JSON.stringify(myObject);
+console.log(jsonString); // 출력: {"name":"John","age":30}
+```
+
+```javascript
+const jsonString = '{"name": "John", "age": 30, "location": "New York"}';
+const myObject = JSON.parse(jsonString);
+
+console.log(myObject);
+```
+결과
+```javascript
+{
+  name: 'John',
+  age: 30,
+  location: 'New York'
+}
+```
+
+그 외 백엔드 자바진영에서 JSON을 사용하고 싶다면 `Jackson` 라이브러리를 사용하면 된다.
