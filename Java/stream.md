@@ -61,3 +61,72 @@ Stream<String> stream2 = Arrays.stream(arr, 1, 3);
 stream2.forEach(e -> System.out.print(e + " "));
 ```
 
+# 스트림의 중개연산 (intermediate operation)
+- 스트림에 의해 생성된 초기 스트림은 중개 연산을 통해 또 다른 스트림으로 변환된다.
+- 중개연산은 연속으로 연결하여 사용할 수 있다.
+
+## 중개연산의 메소드
+1. 스트림 필터링: filter, distinct
+2. 스트림 변환: map, flatMap
+3. 스트림 제한: limit, skip
+4. 스트림 정렬: sorted
+5. 스트림 연산 확인: peek
+
+
+## 스트림 필터링
+- filter: 주어진 조건에 맞는 요소로 구성된 새로운 스트림을 반환
+- distinct: 중복된 요소 제거
+
+```java
+IntStream stream1 = IntStream.of(7, 5, 5, 2, 1, 2, 3, 5, 4, 6);
+IntStream stream2 = IntStream.of(7, 5, 5, 2, 1, 2, 3, 5, 4, 6);
+
+// 스트림에서 중복된 요소를 제거함.
+stream1.distinct().forEach(e -> System.out.print(e + " "));
+System.out.println();
+
+ 
+// 스트림에서 홀수만을 골라냄.
+stream2.filter(n -> n % 2 != 0).forEach(e -> System.out.print(e + " "));
+```
+
+## 스트림 변환
+- map: 스트림 요소를 함수의 인수로 전달하여 그 결과값을 반환
+- flatMap: 해당 요소들이 배열이라면 각 요소의 반환값을 새로 합친 새로운 스트림 반환
+
+```java
+Stream<String> stream = Stream.of("HTML", "CSS", "JAVA", "JAVASCRIPT");
+
+stream.map(s -> s.length()).forEach(System.out::println);
+```
+
+## 스트림 제한
+- limit: 스트림의 첫번째 요소부터 전달된 개수만큼의 요소만으로 이루어짐
+- skip: 스트림의 첫번째 요소부터 전달된 개수만큼을 제외한 요소로 이루어짐
+  
+```java
+IntStream stream1 = IntStream.range(0, 10);
+IntStream stream2 = IntStream.range(0, 10);
+ 
+stream1.skip(4).forEach(n -> System.out.print(n + " "));
+System.out.println();
+
+stream2.limit(5).forEach(n -> System.out.print(n + " "));
+System.out.println();
+```
+
+## 스트림 정렬
+- sorted: 비교자를 이용하여 정렬
+- 이때, 비교자를 전달하지 않으면 기본적으로 사전순으로 정렬한다.
+```java
+Stream<String> stream1 = Stream.of("JAVA", "HTML", "JAVASCRIPT", "CSS");
+Stream<String> stream2 = Stream.of("JAVA", "HTML", "JAVASCRIPT", "CSS");
+
+
+stream1.sorted().forEach(s -> System.out.print(s + " "));
+System.out.println();
+
+
+stream2.sorted(Comparator.reverseOrder()).forEach(s -> System.out.print(s + " "));
+```
+
