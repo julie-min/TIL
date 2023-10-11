@@ -130,3 +130,32 @@ System.out.println();
 stream2.sorted(Comparator.reverseOrder()).forEach(s -> System.out.print(s + " "));
 ```
 
+## 스트림 연산 확인
+- 원본 스트림에서 요소를 소모하지 않으므로, 주로 연산과 연산 사이에 결과를 확인할 때 사용
+- 디버깅용
+
+# 스트림의 최종연산 (terminal operation)
+- 최종 연산을 통해 각 요소를 소모하여 결과 표시
+- 지연되었던 모든 중개 연산들이 최종 연산 시에 모두 수행
+- 최종 연산시, 모든 요소를 소모한 스트림은 더이상 사용할 수 없게 된다.
+
+## 최종연산 메소드
+- 요소의 출력: forEach
+- 요소의 소모: reduce
+- 요소의 검색: findFirst, findAny
+- 요소의 검사: anyMatch, allMatch, noneMatch
+- 요소의 통계: count, min, max
+- 요소의 연산: sum, average
+- 요소의 수집: collect
+
+
+# 요소의 출력
+- forEach: 각 요소를 소모하여 수행
+- 반환타입은 void
+- 모든 스트림의 모든 요소를 출력하는 용도로 많이 사용됨
+```java
+Stream<String> stream = Stream.of("넷", "둘", "셋", "하나");
+
+stream.forEach(System.out::println);
+```
+
