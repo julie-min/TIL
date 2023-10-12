@@ -149,7 +149,7 @@ stream2.sorted(Comparator.reverseOrder()).forEach(s -> System.out.print(s + " ")
 - 요소의 수집: collect
 
 
-# 요소의 출력
+## 요소의 출력
 - forEach: 각 요소를 소모하여 수행
 - 반환타입은 void
 - 모든 스트림의 모든 요소를 출력하는 용도로 많이 사용됨
@@ -157,5 +157,42 @@ stream2.sorted(Comparator.reverseOrder()).forEach(s -> System.out.print(s + " ")
 Stream<String> stream = Stream.of("넷", "둘", "셋", "하나");
 
 stream.forEach(System.out::println);
+```
+
+## 요소의 소모
+- reduce: 첫번째와 두번째 요소를 가지고 연산을 수행한 뒤, 그 결과를 세번째 요소와 또 다시 연산을 수행한다.
+- 이런식으로 해당 스트림의 모든 요소를 소모하여 연산을 수행한 결과를 반환한다.
+- 인수로 초기값을 전달하면 그 초기값과 첫번째 요소를 연산시작하며, 그 결과와 두번째 요소를 가지고 계속해서 연산이 진행된다.
+```java
+Stream<String> stream1 = Stream.of("넷", "둘", "셋", "하나");
+Stream<String> stream2 = Stream.of("넷", "둘", "셋", "하나");
+
+Optional<String> result1 = stream1.reduce((s1, s2) -> s1 + "++" + s2);
+result1.ifPresent(System.out::println);
+ 
+String result2 = stream2.reduce("시작", (s1, s2) -> s1 + "++" + s2);
+System.out.println(result2);
+``` 
+```
+넷++둘++셋++하나
+
+시작++넷++둘++셋++하나
+```
+
+## 요소의 통계
+- count: 해당 스트림의 요소 총 개수
+- max, min: 스트림 내의 요소 중에서 가장 큰 값과 가장 작은 값
+```java
+IntStream stream1 = IntStream.of(30, 90, 70, 10);
+
+IntStream stream2 = IntStream.of(30, 90, 70, 10);
+
+ 
+System.out.println(stream1.count());
+System.out.println(stream2.max().getAsInt());
+```
+```
+4
+90
 ```
 
