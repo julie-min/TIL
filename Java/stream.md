@@ -100,6 +100,22 @@ Stream<String> stream = Stream.of("HTML", "CSS", "JAVA", "JAVASCRIPT");
 stream.map(s -> s.length()).forEach(System.out::println);
 ```
 
+- 기존 값을 변경한다는 개념보다는, 새로운 값을 만든다는 개념
+- Mapping 이라는 단어
+```java
+List<String> fruits = Arrays.asList("사과", "바나나", "오렌지");
+
+List<String> upperCaseFruits = fruits.stream()
+                                     .map(fruit -> fruit.toUpperCase())
+                                     .collect(Collectors.toList());
+
+```
+`::` 연산자의 의미를 알아야 될 필요가 있다.
+`A::B` 에서 <br>
+A: 클래스, 객체
+B: 메소드
+
+
 ## 스트림 제한
 - limit: 스트림의 첫번째 요소부터 전달된 개수만큼의 요소만으로 이루어짐
 - skip: 스트림의 첫번째 요소부터 전달된 개수만큼을 제외한 요소로 이루어짐
@@ -196,3 +212,12 @@ System.out.println(stream2.max().getAsInt());
 90
 ```
 
+## 요소의 연산
+```java
+IntStream stream1 = IntStream.of(30, 90, 70, 10);
+DoubleStream stream2 = DoubleStream.of(30.3, 90.9, 70.7, 10.1);
+
+ 
+System.out.println(stream1.sum());
+System.out.println(stream2.average().getAsDouble());
+```
