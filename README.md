@@ -24,6 +24,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Relational Database](SQL/6.%20Relational%20Database.md)
 - [Entity](SQL/Entity.md)
 - [Function](SQL/Function.md)
+- [SQLD](SQL/SQLD.md)
 
 # Java
 - [Constructor](Java/Constructor.md)
