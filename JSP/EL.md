@@ -25,5 +25,4 @@
 <br>
 수식의 결과값이 true이면 값1, false이면 값2 리턴
 
-
-
+즉, 컨트롤러를 통해 model.addAttribute로 값을 넘겨준 경우 JSP에서 EL로 사용 가능하다. EL은 달러표시로 한다.
