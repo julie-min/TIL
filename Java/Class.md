@@ -168,7 +168,18 @@ public class Other {
 }
 ```
 
-
+## 자바의 기본형/참조형 변수
+[기본형]
+- 논리형 : boolean (1byte)
+- 문자형 : char (2byte)
+- 정수형 : <br>
+  - byte (1byte) <br>
+  - short (2byte)
+  - **int (4byte)**
+  - long (8byte)
+- 실수형 : <br>
+  - float (4byte)
+  - double (4byte)
 
 
 

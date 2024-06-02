@@ -16,12 +16,15 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 ![sandy-spongebob-movie-coming-to-netflix-in-2023](https://github.com/julie-min/TIL/assets/130271406/ab4d59fc-a3e1-47d9-8a11-d7b6789e6ad6)
 
 ****
-# mySQL
-- [JOIN 내부, 외부, 교차](https://github.com/julie-min/TIL/blob/main/mySQL/3.%20JOIN.md)
-- [Frequently Used Grammar](mySQL/2.MySQL_grammar.md)
-- [Database Modeling](mySQL/4.%20Database%20Modeling.md)
-- [Data Normalization](mySQL/5.%20Data%20Normalization.md)
-- [Relational Database](mySQL/6.%20Relational%20Database.md)
+# SQL
+- [JOIN 내부, 외부, 교차](SQL/3.%20JOIN.md)
+- [Frequently Used Grammar](SQL/2.MySQL_grammar.md)
+- [Database Modeling](SQL/4.%20Database%20Modeling.md)
+- [Data Normalization](SQL/5.%20Data%20Normalization.md)
+- [Relational Database](SQL/6.%20Relational%20Database.md)
+- [Entity](SQL/Entity.md)
+- [Function](SQL/Function.md)
+- [SQLD](SQL/SQLD.md)
 
 # Java
 - [Constructor](Java/Constructor.md)
@@ -32,21 +35,58 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Collection 정리](Java/List_Array_Set.md)
 - [Recursion](Java/Recursion.md)
 - [Thread](Java/Thread.md)
+- [Method](Java/Method.md)
+- [Singleton](Java/Singleton.md)
 
 # HTTP
-- [HTTP 개론](https://github.com/julie-min/TIL/blob/main/HTTP/1.%20HTTP.md)
-- [Servlet](https://github.com/julie-min/TIL/blob/main/HTTP/2.%20Servlet.md)
+- [HTTP 개론](Webapplication/HTTP.md)
+- [Servlet](Webapplication/Servlet.md)
+- [CGI](Webapplication/CGI.md)
+- [Thymeleaf](Webapplication/Thymeleaf.md)
+- [Bootstrap](JQuery/Bootstrap.md)
+- [Variable](JQuery/variable.md)
+
+# JavaScript
+- [Data Type](JavaScript/DataType.mdDataType.md)
+- [Parsing](JavaScript/JSONparsing.mdJSONparsing.md)
 
 # Spring
-- [Spring Framework](https://github.com/julie-min/TIL/blob/main/Spring/1.Spring%20Framework.md)
-- [Spring Boot Setting](https://github.com/julie-min/TIL/blob/main/Spring/2.Spring%20Boot%20Setting.md)
+- [Spring Framework](Spring/1.Spring%20Framework.md)
+- [Spring Boot Setting](Spring/2.Spring%20Boot%20Setting.md)
 - [Controller Method](Spring/3.%20Controller%20Method.md)
 - [Dependency Injection](Spring/4.%20Dependency%20Injection.md)
+- [Singleton](Spring/5.%20Singleton.md)
+- [Lombok](Spring/Lombok.md)
+- [Model](Spring/Model.md)
+- [ResponseEntity](Spring/ResponseEntity.md)
 
 # Security
 - [Security](Security/Information_protection.md)
 - [Security](Security/cipher.md)
 - [Security](Security/authentication.md)
+
+# JSP
+- [HTTP Protocol](JSP/HTTP_protocol.md)
+- [Web](JSP/Web.md)
+- [JSTL](JSTL.md)
+- [Session](Session.md)
+- [EL](EL.md)
+
+
+# Study for Exam
+- [C Programming](C_Programming/Exam_study.md)
+- [Python1](Python/Exam_quiz.md)
+- [Python2](Python/Exam_study.md)
+- [OSI](Engineer_Information_Processing/OSI.md)
+- [Diagram](Engineer_Information_Processing/Diagram.md)
+- [GoF](Engineer_Information_Processing/GoF.md)
+
+# Algorithm
+- [Array](Array.md)
+- [List](List.md)
+- [Set](Set.md)
+- [Stack&Queue](Stack&Queue.md)
+- [String](String.md)
 
 <br>
 
@@ -57,3 +97,6 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - https://www.toptal.com/developers/gitignore
 - https://www.w3schools.com/java/default.asp 
 - https://techblog.woowahan.com/2553/
+- https://cscircles.cemc.uwaterloo.ca/java_visualize/
+- https://mvnrepository.com/
+- https://jqueryui.com/
