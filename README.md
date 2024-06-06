@@ -66,6 +66,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Authentication](Security/authentication.md)
 - [Sevlet Security](Security/SevletSecurity.md)
 - [Network](Security/network_security.md)
+- [Server Security](Security/server_security.md)
 
 # JSP
 - [HTTP Protocol](JSP/HTTP_protocol.md)
