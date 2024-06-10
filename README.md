@@ -17,7 +17,7 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 
 ****
 # SQL
-- [JOIN 내부, 외부, 교차](SQL/3.%20JOIN.md)
+- [JOIN](SQL/3.%20JOIN.md)
 - [Frequently Used Grammar](SQL/2.MySQL_grammar.md)
 - [Database Modeling](SQL/4.%20Database%20Modeling.md)
 - [Data Normalization](SQL/5.%20Data%20Normalization.md)
@@ -32,14 +32,14 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Enum](Java/Enum.md)
 - [Interfaces](Java/Interface.md)
 - [JDBC](Java/JDBC.md)
-- [Collection 정리](Java/List_Array_Set.md)
+- [Collection Summarize](Java/List_Array_Set.md)
 - [Recursion](Java/Recursion.md)
 - [Thread](Java/Thread.md)
 - [Method](Java/Method.md)
 - [Singleton](Java/Singleton.md)
 
 # HTTP
-- [HTTP 개론](Webapplication/HTTP.md)
+- [HTTP Introduction](Webapplication/HTTP.md)
 - [Servlet](Webapplication/Servlet.md)
 - [CGI](Webapplication/CGI.md)
 - [Thymeleaf](Webapplication/Thymeleaf.md)
@@ -90,6 +90,14 @@ You can also check out my [Velog](https://velog.io/@codingmingu), [Tistory](http
 - [Set](Set.md)
 - [Stack&Queue](Stack&Queue.md)
 - [String](String.md)
+
+# Test
+- [Fundamentals](ISTQB/fundamen tals_of_testing.md)
+- [Lifecycle](ISTQB/software_development_lifecycle.md)
+- [Static testing](ISTQB/static_testing.md)
+- [Test Analysis](ISTQB/test_analysis_and_design.md)
+- [Managing Test](ISTQB/managing_test_activities.md)
+- [Test Tools](ISTQB/test_tools.md)
 
 <br>
 
